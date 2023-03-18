@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+  <div class="header">
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class='fas fa-bars'></i>
+      </label>
+      <label class="logo">Rio</label>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a class="active" href="file:///F:/website%20element/New%20folder/New%20folder/Product.html">Search</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="file:///F:/website%20element/New%20folder/New%20folder/submited.html" target="_blank">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="box">
+      <input type="text" id="myInput" placeholder="Search..." onkeyup="searchFun()" title="Type in a Name">
+      <button type="submit">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+    <table id="myTable">
+      <tr class="header">
+        <th style="width:60%;">Name</th>
+        <th style="width:40%;">Download</th>
+      </tr>
+      <tr>
+        <td><img src="F:\website element\New folder\images\vscode_icon.png" height="15px" width="20px">VScode Editor</td>
+        <td><a href="F:\website element\New folder\images\VScode.zip">Download</a></td>
+      </tr>
+      <tr>
+        <td>Berglunds snabbkop</td>
+        <td>Sweden</td>
+      </tr>
+      <tr>
+        <td>Island Trading</td>
+        <td>UK</td>
+      </tr>
+      <tr>
+        <td>Koniglich Essen</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Laughing Bacchus Winecellars</td>
+        <td>Canada</td>
+      </tr>
+      <tr>
+        <td>Magazzini Alimentari Riuniti</td>
+        <td>Italy</td>
+      </tr>
+      <tr>
+        <td>North/South</td>
+        <td>UK</td>
+      </tr>
+      <tr>
+        <td>Paris specialites</td>
+        <td>France</td>
+      </tr>
+    </table>
+    <script src="main.js"></script>
+</body>
+</html>
