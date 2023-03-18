@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>submit</title>
+<link rel="stylesheet" href="stylesb.css">
+</head>
+<body>
+   <nav>
+    <form ="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" title="Enter Your Name" required>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      
+        <button type="submit" onclick="sendEmail()">Send</button>
+      </form>
+    </nav>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail(){
+        Email.send({
+          
+             SecureToken : "5d4dc486-de5b-41ab-a231-d81dfe9a8577", 
+             To : "rajeshpathan26538@gmail.com",
+             From : "rokiapathan77@gmail.com",
+             Subject : "New contact form inquary",
+             Body : "And this is the body"
+      }).then(
+  message => alert(message)
+);
+      }
+    </script>
+</body>
+</html>
